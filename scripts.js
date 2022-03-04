@@ -1,4 +1,4 @@
-const url = 'https://www.google.com'
+const url = 'https://jandersonlira.netlify.app/sucesso'
 const btn = document.querySelector('#btn')
 
 function openInNewTab(url) {
