@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/styles.css">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/scripts.js" defer></script>
+    <title>Input</title>
 </head>
+<!---Projeto basiado no video: https://www.youtube.com/watch?v=PSkAt5Z-jMo -->
+<body class=" h-screen grid items-center justify-center">
 
-<body class="bg-slate-800 text-slate-50 min-h-screen">
-
-    <div class="w-3/4 mx-auto flex justify-center mt-9">
-    <div class="card
-    ">
-        <div class="w-40 flex items-center ">
-            <img src="../assit/perfil_Janderson.jpg" alt="Janderson Lira" class="w-40 h-40 rounded-full border border-8 border-orange-400">
-        </div>  
-
-        <div class="w-full md:w-3/4 p-0 md:p-6 flex flex-col justify-center text-center md:text-left">
-            <h1 class="text-4xl text-orange-400">Janderson</h1>
-            <h2 class="text-2xl text-slate-400">Full Stack Developer</h2>
-            <p class="text-slate-500 ">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.Leite de capivaris, leite de mula manquis sem cabeça</p>
-        </div>
-    </div>
-    </div>
-    <div class="w-3/4 mx-auto flex justify-center mt-9">
-        <div class="max-w-3xl border border-slate-500 rounded-md p-4 flex flex-col md:flex-row items-center">
-            <div class="w-40 flex items-center ">
-                <img src="../assit/perfil_Janderson.jpg" alt="Janderson Lira" class="w-40 h-40 rounded-full border border-8 border-orange-400">
-            </div>  
-    
-            <div class="w-full md:w-3/4 p-0 md:p-6 flex flex-col justify-center text-center md:text-left">
-                <h1 class="text-4xl text-orange-400">Janderson</h1>
-                <h2 class="text-2xl text-slate-400">Full Stack Developer</h2>
-                <p class="text-slate-500 ">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.Leite de capivaris, leite de mula manquis sem cabeça</p>
-            </div>
-        </div>
-        </div>
+   <div class="max-w-7xl mx-auto px-4">
+        <h1 class=" text-3xl font-extrabold tracking-tight">
+            TESTE INPUT
+        </h1>
+        <h2 class=" text-2xl text-yellow-600 ">
+            Enviar informações para um google formulário
+        </h2>
+<!-------formulário enviando dados para o google form-->
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScuoTDLVKtRP8YudZ0c-sBR0ulSSZWM82ryMSeoYf-0LMExxw/formResponse" class=" mt-8 flex">
+<!-------sempre obeservar o "action"-->
+            <input 
+            type="text"
+            name="entry.1064265655"
+            class=" border border-gray-400 px-4 py-2 rounded-md"
+            placeholder="Digite algo@"
+            >
+<!-------É muito importante definir o "name"-->
+            <button id="btn" class="bg-yellow-600 px-4 py-2 rounded-md text-white houver:bg-yellow-400 flex items-center justify-center ml-3 hover:bg-yellow-500" onclick="alert('Formulário envidado com sucesso!')">
+                Enviar texte
+            </button>
+<!------Sugestão: ver como uma forma de emitir um mensagem de alerta e continuar na mesma página-->
+<!---usar javascript-->
+<!---video: https://www.youtube.com/watch?v=vktXcI6QNe8-->
+        </form>
+   </div>
 
 </body>
 </html>
